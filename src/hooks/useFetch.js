@@ -5,7 +5,7 @@ export const useFetch = ( url ) => {
     const [state, setstate] = useState({ data:null, loading:true, error:null});
 
     useEffect( () => {
-        fetch(url).then(resp => resp.json).then(
+        fetch(url).then(resp => resp.json() ).then(
             data => {
                 setstate({
                     loading:false,
@@ -15,5 +15,5 @@ export const useFetch = ( url ) => {
             }
         )
     }, [url])
-    return state
+    return state;
 }
