@@ -7,16 +7,20 @@ import {
 import { AboutScreen } from './AboutScreen'
 import { LoginScreen } from './LoginScreen'
 import { HomeScreen } from './HomeScreen'
+import { NavBar } from './NavBar';
 
 export const AppRouter = () => {
     return (
         <Router>
             <div>
-                <Switch>
-                    <Route exact path='/about' component={ AboutScreen }/>
-                    <Route exact path='/login' component={ LoginScreen }/>
-                    <Route exact path='/' component={ HomeScreen }/>
-                </Switch>
+                <NavBar/>
+                <div className='container'>
+                    <Switch>
+                        <Route exact path='/about' component={ AboutScreen }/>
+                        <Route exact path='/login' component={ LoginScreen }/>
+                        <Route exact path='/' component={ HomeScreen }/>
+                    </Switch>
+                </div>
             
             </div>
         </Router>
