@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing on MultipleCustomHooks should render correctly 1`] = `
+<div>
+  <h3>
+    BreakingBad Quotes
+  </h3>
+  <hr />
+  <div
+    className="alert alert-info text-right"
+  >
+    Loading...
+  </div>
+</div>
+`;

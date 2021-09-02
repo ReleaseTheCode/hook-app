@@ -26,7 +26,7 @@ describe('Test on useFetch', () => {
         const{ data, loading, error } = result.current;
         expect( data ).toBe(null);
         expect(loading).toBe(false);
-        expect(error).toBe('No se pudo cargar la infox');
+        expect(error).toBe('No se pudo cargar la info');
     })
     
 })
