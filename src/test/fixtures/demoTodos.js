@@ -1,12 +1,12 @@
 export const demoTodos = [
     {
         id: 1,
-        todo: 'Comprar pan',
+        desc: 'Comprar pan',
         done : false
     },
     {
         id: 2,
-        todo: 'Comprar leche',
+        desc: 'Comprar leche',
         done : false
     }
 ];

@@ -23,7 +23,6 @@ describe('Test on ToDo Reducer', () => {
     test('should return before the delete result', () => {
         const state = todoReducer( demoTodos, { type: 'delete', payload: 2 } );
         expect( state.length ).toBe( 1 );
-        console.log(state)
         expect( state ).toEqual( [ demoTodos[0] ] );
     });
 
