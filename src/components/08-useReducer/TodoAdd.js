@@ -19,12 +19,7 @@ export const TodoAdd = ({ handleAddTodo }) => {
             done: false
         };
 
-        const action = {
-            type: 'add',
-            payload: newTodo
-        };
-
-        handleAddTodo( action );
+        handleAddTodo( newTodo );
         reset();
     }
 

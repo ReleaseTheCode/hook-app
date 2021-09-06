@@ -19,7 +19,6 @@ export const TodoApp = () => {
     }, [todos]);
 
     const handleAddTodo = ( newTodo ) => {
-
         dispatch( {
             type: 'add',
             payload: newTodo

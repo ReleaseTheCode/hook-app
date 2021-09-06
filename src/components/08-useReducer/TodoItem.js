@@ -11,7 +11,7 @@ export const TodoItem = ({ index, todo, handleToggle, handleDelete}) => {
                 className={`${todo.done && 'complete' }`}
                 onClick={ () => handleToggle( todo.id ) }
             > 
-                { index} { todo.desc } 
+                { index} { todo.desc }
             </p>
             <button className='btn btn-danger' onClick={()=>handleDelete(todo.id)} >Borrar</button>
         </li>
