@@ -1,5 +1,5 @@
 import { todoReducer } from "../../../components/08-useReducer/todoReducer"
-import { demoTodos } from "../../fixrures/demoTodos"
+import { demoTodos } from "../../fixtures/demoTodos"
 
 describe('Test on ToDo Reducer', () => {
 
@@ -15,7 +15,7 @@ describe('Test on ToDo Reducer', () => {
             done : true
         }
         
-        const state = todoReducer( demoTodos, { type: 'add', newTodo } );
+        const state = todoReducer( demoTodos, { type: 'add', payload: newTodo } );
         expect( state.length ).toBe( 3 );
         expect( state ).toEqual( [ ...demoTodos, newTodo ] );
     });
