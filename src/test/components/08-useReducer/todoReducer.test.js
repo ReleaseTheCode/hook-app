@@ -20,4 +20,15 @@ describe('Test on ToDo Reducer', () => {
         expect( state ).toEqual( [ ...demoTodos, newTodo ] );
     });
     
+    test('should return before the delete result', () => {
+        const state = todoReducer( demoTodos, { type: 'delete', payload: 2 } );
+        expect( state.length ).toBe( 1 );
+        console.log(state)
+        expect( state ).toEqual( [ demoTodos[0] ] );
+    });
+
+    test('should return an element with de property done changed', () => {
+        const state = todoReducer( demoTodos, { type: 'toggle', payload: 1 } );
+        expect( state[0].done ).toEqual( true );
+    });
 });
