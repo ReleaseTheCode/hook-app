@@ -6,7 +6,7 @@ export const LoginScreen = () => {
     const userObj = {
         id: 1,
         name: 'richter'
-    } 
+    };
 
     return (
         <div>
